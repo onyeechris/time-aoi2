@@ -3,11 +3,13 @@ name: Frontend CI-CD
 on:
   push:
     branches: [ "main" ] 
-
-    
+  
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: time-project
     outputs:
       image_tag: ${{ steps.docker_build.outputs.image }}
     
