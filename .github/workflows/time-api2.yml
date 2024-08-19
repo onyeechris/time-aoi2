@@ -30,6 +30,7 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         tags: main-${{ github.sha }}
+        dockerfile: time-project
       
     - name: Set output image tag
       id: set_output
