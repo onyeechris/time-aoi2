@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: time-project
+        working-directory: time-project/
     outputs:
       image_tag: ${{ steps.docker_build.outputs.image }}
     
